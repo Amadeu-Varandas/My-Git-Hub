@@ -4,8 +4,7 @@ void ft_putchar(char c);
 
 int main(void)
 {
-    char a = "a";
-    ft_putchar(a);
+    ft_putchar('Z');
 }
 
 void ft_putchar(char c)
