@@ -1,15 +1,15 @@
 #include<unistd.h>
 
-void ft_print_alphabet(void);
+void ft_print_reverse_alphabet(void);
 
 int main(void)
 {
-    ft_print_alphabet();
+    ft_print_reverse_alphabet();
 }
 
-void ft_print_alphabet(void)
+void ft_print_reverse_alphabet(void)
 {
-    for (int i = 97; i < 123; i++)
+    for (int i = 122; i > 96; i--)
     {
         write(1, &i, 1);
     }

@@ -20,6 +20,7 @@ void ft_print_comb(void)
         if (cen < dez && dez < uni)
         {
             printf("%03d\n", i);
+            
         }
                   
     }
