@@ -4,19 +4,24 @@ void ft_sort_int_tab(int *tab, int size);
 
 int main(void)
 {
-    int lista[9] = {1,7,5,6,0,3,4,2,8};
+    int lista[9] = {7,12,5,18,2,15,9,3,19};
     ft_sort_int_tab(lista, 9);
 }
 
 void ft_sort_int_tab(int *tab, int size)
 {
-    for (int i = 1; i < size; i++)
+    int tmp;
+    for (int i = 0; i < size; i++)
     {
-        if (tab[i])
+        for (int j = i + 1; j < size; j++)
         {
-            /* code */
+            if (tab[j] < tab[i])
+            {
+                tmp = tab[i];
+                tab[i] = tab[j];
+                tab[j] = tmp;
+            }          
         }
-        
     }
-    
+    mostrar(tab);
 }
