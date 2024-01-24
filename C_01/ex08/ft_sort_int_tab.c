@@ -1,26 +1,42 @@
-#include <stdio.h>
+/* #include <stdio.h>
 
 void ft_sort_int_tab(int *tab, int size);
+void	mostrar(int *vetor);
 
 int main(void)
 {
-    int lista[9] = {7,12,5,18,2,15,9,3,19};
-    ft_sort_int_tab(lista, 9);
+	int lista[7] = {7,12,5,18,42,4,14};
+	ft_sort_int_tab(lista, 7);
+	mostrar(lista);
 }
 
-void ft_sort_int_tab(int *tab, int size)
+void	mostrar(int *vetor)
 {
-    int tmp;
-    for (int i = 0; i < size; i++)
-    {
-        for (int j = i + 1; j < size; j++)
-        {
-            if (tab[j] < tab[i])
-            {
-                tmp = tab[i];
-                tab[i] = tab[j];
-                tab[j] = tmp;
-            }          
-        }
-    }
+	for (int i = 0; i < 7; i++)
+	{
+		printf("%i, ", vetor[i]);
+	}
+	printf("\n");
+} */
+
+void	ft_sort_int_tab(int *tab, int size)
+{
+	int	i;
+	int	tmp;
+
+	while (size >= 0)
+	{
+		i = 0;
+		while (i < size - 1)
+		{
+			if (tab[i] > tab[i + 1])
+			{
+				tmp = tab [i];
+				tab[i] = tab [i + 1];
+				tab [i + 1] = tmp;
+			}
+			i++;
+		}
+		size--;
+	}
 }
