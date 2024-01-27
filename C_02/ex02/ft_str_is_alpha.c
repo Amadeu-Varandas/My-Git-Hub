@@ -1,11 +1,11 @@
-#include <stdio.h>
+/* #include <stdio.h>
 
 int ft_str_is_alpha(char *str);
 int check_ft_str_is_alpha(char c);
 
 int main(void)
 {
-    char *word = "string";
+    char *word = "";
     if (ft_str_is_alpha(word) == 1)
     {
         printf("Apenas contem letras!\n");
@@ -14,6 +14,22 @@ int main(void)
         printf("tambem contem outras coisas\n");
     }
 
+} */
+
+int check_ft_str_is_alpha(char c)
+{
+    if ((c >= 'a') && (c<='z'))
+    {
+        return 1;
+    }
+    else if ((c >= 'A') && (c<='Z'))
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 int ft_str_is_alpha(char *str)
@@ -30,20 +46,4 @@ int ft_str_is_alpha(char *str)
     }
     return 1;
     
-}
-
-int check_ft_str_is_alpha(char c)
-{
-    if ((c >= 'a') && (c<='z'))
-    {
-        return 1;
-    }
-    else if ((c >= 'A') && (c<='Z'))
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
 }

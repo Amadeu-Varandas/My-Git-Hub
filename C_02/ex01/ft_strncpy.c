@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 char *ft_strncpy(char *dest, char *src, unsigned int n);
 
@@ -11,7 +11,7 @@ int main(void)
     ft_strncpy(string2, string1, 5);
     
     printf(":%s|%s:\n", string1, string2);
-}
+}*/
 
 char *ft_strncpy(char *dest, char *src, unsigned int n)
 {
